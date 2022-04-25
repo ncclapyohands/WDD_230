@@ -17,4 +17,4 @@ console.log(array[1]);
 // push adds the number to the end of the array
 example.push
 
-<!--This is an HTML comment-->
+
