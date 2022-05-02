@@ -3,8 +3,8 @@
     margin: 0;
     
 }
-img{
-    width: 100px;
+.navbar-logo img{
+    height: 50px;
     border-radius: 10px;
 }
 body{
@@ -18,16 +18,13 @@ h1{
 
 .box{
     height: 500px;
-    width: 230px;  /*100% if using grid */
-    background-color: lightblue;
+    width: 400px;  /*100% if using grid */
+    background-color: whitesmoke;
     border: 2px solid black;
-    grid-template-columns: 1fr;
-    
-   /* margin: 0 auto;  no margin if grid*/
-    
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* @media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px){
     #grid{
         grid-template-columns: 1fr 1fr;
     }
@@ -45,4 +42,4 @@ h1{
         grid-column: 1/2;
         width: 100%;
     }
-} */
+}
