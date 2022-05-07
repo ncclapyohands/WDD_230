@@ -1,5 +1,27 @@
-.class{
+.cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.cards img{
+    height: 20px;
+    margin: 10px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    
+}
+
+@media screen and (min-width: 900px){
+    nav ul{
+        flex-direction: row;
+    }
 }
