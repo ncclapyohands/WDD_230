@@ -19,7 +19,7 @@ img{
 body{
     max-width: 45%;
     margin: auto;
-    
+    background-color: #304D6D;
 }
 
 h1{
@@ -36,7 +36,7 @@ header{
 
 ul {
     text-align: left;
-    margin: auto;
+    
 }
 
 a {
@@ -44,7 +44,7 @@ a {
 }
 
 li {
-    
+    margin: 1em;
 }
 
 
