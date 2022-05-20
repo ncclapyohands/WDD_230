@@ -8,7 +8,10 @@ footer {
     text-align: center;
     background-color: aliceblue;
 }
-
+main{
+    border-style: solid;
+    padding: 10px;
+}
 img{
     width: 25%;
     border-radius: 10px;
@@ -20,6 +23,7 @@ body{
     max-width: 45%;
     margin: auto;
     background-color: #304D6D;
+    
 }
 
 h1{
@@ -36,7 +40,8 @@ header{
 
 ul {
     text-align: left;
-    
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
 }
 
 a {
