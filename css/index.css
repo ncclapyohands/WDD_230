@@ -4,13 +4,10 @@
     
 }
 
-footer {
-    text-align: center;
-    background-color: aliceblue;
-}
 main{
     border-style: solid;
     padding: 10px;
+    background-color: white;
 }
 img{
     width: 25%;
@@ -22,7 +19,7 @@ img{
 body{
     max-width: 45%;
     margin: auto;
-    background-color: #304D6D;
+    background-color: lightgrey;
     
 }
 
@@ -32,7 +29,7 @@ h1{
 }
 header{
     text-align: center;
-    background-color: grey;
+    background-color: #264653;
     margin: 3em auto;
     align-self:center;
 
@@ -44,12 +41,13 @@ ul {
     font-weight: bold;
 }
 
-a {
-
-}
-
 li {
     margin: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: #264653;
 }
 
 
