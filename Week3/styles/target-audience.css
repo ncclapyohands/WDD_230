@@ -19,13 +19,11 @@ nav ul li {
 
 li a {
     text-decoration: none;
-    
 }
 li{
     padding: 10px;
 }
-
-header img{
+img{
     display: block;
     width: 20%;
     margin-left: auto;
@@ -36,7 +34,8 @@ header img{
 body h1 ,body h2, body h3{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
+    padding: 10px;
 }
 
 body p{
@@ -45,4 +44,6 @@ body p{
     margin-right: 100px;
     font-size: large;
     font-family: 'Merriweather Sans', sans-serif;
+    padding: 10px;
 }
+
