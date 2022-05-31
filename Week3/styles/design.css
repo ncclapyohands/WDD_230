@@ -9,7 +9,7 @@ nav ul {
     flex-direction: row;
     justify-content: right;
     margin: 0;
-    padding: 1em;
+   
     
 }
 
@@ -19,10 +19,28 @@ nav ul li {
 
 li a {
     text-decoration: none;
+    color: black;
     
 }
 li{
-    padding: 10px;
+    padding: 1em;
+}
+img{
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+li:hover {
+    background-color: gray;
+    font-weight: bolder;
+   
+}
+
+nav ul li img {
+    display: block;
+    width: 20%;
+    justify-content: flex-end;
 }
 
 header img{
