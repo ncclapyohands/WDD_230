@@ -88,5 +88,8 @@ footer {
     border-top: 10px;
     text-align: center;
     background-color: grey;
-    margin: 10px;
+    
+}
+footer img{
+    width: 20%;
 }
