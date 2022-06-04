@@ -1,9 +1,58 @@
+nav{
+    background-color: lightgrey;
+    list-style: none;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+nav ul li {
+    list-style:none;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 2.5EM;
+    margin:auto;
+}
+
+img{
+    display: block;
+    width: 20%;
+    margin-left: 15px;
+    margin-right: auto;
+
+}
+.menu_icons:hover {
+    background-color: gray;
+    font-weight: bolder;
+   
+}
+
+nav ul li img {
+    display: block;
+    width: 20%;
+    justify-content: flex-end;
+}
+
+
 body{
     display: flex;
     flex-wrap:wrap;
     align-content: space-around;
     justify-content: center;
-    margin: 1em;
+    
     
     
 }
@@ -15,7 +64,7 @@ section{
     justify-content: center;
 }
 section img{
-    width: 60%;
+    width: 72%;
     display: block;
     margin: auto;
     justify-content: center;
@@ -24,4 +73,20 @@ section p {
     text-align: center;
     padding: 0;
     margin: 0;
+}
+#mthood{
+    width: 80%;
+}
+#multnomah{
+    width: 45%;
+}
+#lighthouse{
+    width: 40%;
+}
+
+footer {
+    border-top: 10px;
+    text-align: center;
+    background-color: grey;
+    margin: 10px;
 }
