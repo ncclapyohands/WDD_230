@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Principles</title>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/lazyloading.js"></script>
     <link href="styles/zero.css" rel="stylesheet" />
     <link href="styles/small.css" rel="stylesheet" />
     <link href="styles/medium.css" rel="stylesheet" />
     <link href="styles/large.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/45ccb5ad1c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -26,13 +28,23 @@
           <li class="menu_icons"><a href="color-scheme.html">Join</a></li>
           <li class="menu_icons"><a href="typography.html">Contact</a></li>
         </ul>
+        <ul>
+          <li class="social_icons">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </li>
+          <li class="social_icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </li>
+          <li class="social_icons">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </li>
+        </ul>
       </nav>
     </header>
     <section class="grid">
       <!-------------Hero----------------->
       <article id="hero">
-        <h2>hero</h2>
-        <p>Random text</p>
+        <img src="images/mthoodportland.jpg" alt="mt hood" />
       </article>
       <!-------------New Releases----------------->
       <article id="release">
@@ -44,6 +56,8 @@
         <h2>Spotlights</h2>
         <section>
           <p>spotlight 1</p>
+          <p id="days-ago"></p>
+          <p class="visited"></p>
         </section>
         <section>
           <p>spotlight 2</p>
@@ -70,5 +84,9 @@
       <img src="images/Portlandlogonew3.png" alt="portland logo" />
     </section>
     <div id="legal">&copy; | Nathan D. Cook | BYU-Idaho</div>
+    <p id="date-today"></p>
   </footer>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/lazyloading.js"></script>
+  <script src="scripts/lastdatevisited.js"></script>
 </html>

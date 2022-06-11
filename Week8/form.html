@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="get" autocomplete="on">
+      <label for="fname">First Name *:</label>
+      <input id="fname" required />
+      <label for="pw">Password *:</label>
+      <input id="pw" required minlength="8" pattern="[- A-Za-z ]+" />
+      <label for="phone">Phone # *:</label>
+      <input id="phone" minlength="10" placeholder="(###) ###-####" required />
+      <input id="date" type="hidden" name="email_sent_date" />
+
+      <button type="submit">Submit</button>
+    </form>
+    <script src="scripts/form.js"></script>
+  </body>
+</html>
