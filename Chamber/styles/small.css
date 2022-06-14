@@ -1,63 +1,8 @@
-nav{
-    background-color: #3d5a80;
-    list-style: none;
-    height: 100%;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin: 0;
-    padding: 0;
-    
-    
-}
-
-nav ul li {
-    list-style:none;
-    
-}
-
-li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 1em 2.5EM;
-    margin:auto;
-}
-.social_icons{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-img{
-    display: block;
-    width: 20%;
-    margin-left: 15px;
-    margin-right: auto;
-
-}
-.menu_icons:hover {
-    background-color: lightgrey;
-    font-weight: bolder;
-   
-}
-
-nav ul li img {
-    display: block;
-    width: 20%;
-    justify-content: flex-end;
-}
-
 
 body{
     background-color: white
 }
-article {
-    
-    
+article { 
     background-color: lightgrey;
     border-width: medium;
 }
@@ -88,12 +33,7 @@ header{
     background-color: grey;
     text-align: center;
 }
-footer {
-    border-top: 10px;
-    text-align: center;
-    background-color: grey;
-    margin: 10px;
-}
+
 #hero img{
     width: 100%;
     margin: 0;

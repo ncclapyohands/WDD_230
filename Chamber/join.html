@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us</title>
+    <link rel="stylesheet" href="styles/headerfooter.css" />
+    <link rel="stylesheet" href="styles/zero.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li><img src="images/Portlandlogonew3.png" alt="logo" /></li>
+        <li class="menu_icons"><a href="index.html">Directory</a></li>
+        <li class="menu_icons">
+          <a href="discovery.html">Discover</a>
+        </li>
+        <li class="menu_icons"><a href="join.html">Join</a></li>
+        <li class="menu_icons"><a href="#.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="social_icons">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </li>
+        <li class="social_icons">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </li>
+        <li class="social_icons">
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <section class="grid">
+      <form action="thankyou.html" method="get" autocomplete="on">
+        <label for="fname"
+          >First Name:
+          <input type="text" id="fname" required />
+        </label>
+
+        <label for="lname"
+          >Last Name:
+          <input type="text" id="lname" required />
+        </label>
+
+        <label for="busname"
+          >Business Name:
+          <input
+            type="text"
+            id="busname"
+            minlength="7"
+            pattern="[- A-Za-z 0-9]+"
+          />
+        </label>
+
+        <label for="phone"
+          >Phone:
+          <input
+            tyle="tel"
+            id="phone"
+            minlength="10"
+            placeholder="(###) ###-####"
+            required
+          />
+        </label>
+
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            placeholder="johndoe@example.com"
+            id="email"
+            name="email"
+            required
+          />
+        </label>
+
+        <label for="membership">
+          Choose a membership level:
+          <select id="membership" name="membership">
+            <option selected disabled hidden>Make a Selection</option>
+            <option value="NP">Nonprofit</option>
+            <option value="bronze">Bronze</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+          </select>
+        </label>
+
+        <label for="desc">
+          Business Description
+          <textarea name="desc" id="desc"></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="membershiplevels">
+        <h1>Membership Levels</h1>
+        <div class="nonprofit">
+          <h2>Nonprofit</h2>
+          <p class="fee">No fee</p>
+          <p>
+            Nonprofit membership is for businesses that are not for profit and
+            are not self-employed.
+          </p>
+        </div>
+
+        <div class="bronze">
+          <h2>Bronze</h2>
+          <p class="fee">$50/month</p>
+          <p>
+            Bronze membership is for businesses with less than 50 employees that
+            are for profit. Benefits include:
+          </p>
+          <ul>
+            <li>15% discount on events</li>
+            <li>10% discount on advertising</li>
+          </ul>
+        </div>
+
+        <div class="silver">
+          <h2>Silver</h2>
+          <p class="fee">$100/month</p>
+          <p>
+            Silver membership is for businesses with less than 250 employees
+            that are for profit. Additional benefits include:
+          </p>
+          <ul>
+            <li>50% discount on events</li>
+            <li>50% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+          </ul>
+        </div>
+
+        <div class="gold">
+          <h2>Gold</h2>
+          <p class="fee">$250/month</p>
+          <p>
+            Gold membership is for businesses with more than 250 employees that
+            are for profit. Additional benefits include:
+          </p>
+          <ul>
+            <li>50% discount on events</li>
+            <li>50% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+            <li>5 featured ads per year</li>
+            <li>1 free training per quarter</li>
+          </ul>
+        </div>
+      </div>
+      <label for="dateTime" hidden>
+        Datetime
+        <input
+          type="datetime-local"
+          name="dateTime"
+          id="dateTime"
+          required
+          hidden
+        />
+      </label>
+    </section>
+    <script src="scripts/form.js"></script>
+  </body>
+  <footer>
+    <section>
+      <img src="images/Portlandlogonew3.png" alt="portland logo" />
+    </section>
+    <div id="legal">&copy; | Nathan D. Cook | BYU-Idaho</div>
+    <p id="date-today"></p>
+  </footer>
+</html>
