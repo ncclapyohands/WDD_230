@@ -77,3 +77,11 @@ footer {
 #copyright{
     grid-column: 3/4;
 }
+
+
+body {
+    margin:0;
+    height:100%;
+    width: 100%;
+    
+}

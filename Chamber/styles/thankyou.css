@@ -4,3 +4,14 @@
     font-weight: 700;
     text-align: center;
 }
+html, body{
+    margin:0;
+    height: 100vh;
+}
+
+footer { 
+    position: fixed;
+    left:0em;
+    right:0em;
+    bottom:0em;
+}
