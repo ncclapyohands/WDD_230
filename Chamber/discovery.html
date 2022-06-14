@@ -10,17 +10,30 @@
     <link rel="stylesheet" href="styles/zero.css" />
     <link rel="stylesheet" href="styles/headerfooter.css" />
   </head>
+
   <body>
+    <!-----------------------------Nav------------------------------------->
     <header>
       <nav>
         <ul>
-          <li><img data-src="images/Portlandlogonew3.png" alt="logo" /></li>
-          <li class="menu_icons"><a href="index.html">Site Plan</a></li>
+          <li><img src="images/portlandcoc1.png" alt="logo" /></li>
+          <li class="menu_icons"><a href="index.html">Directory</a></li>
           <li class="menu_icons">
             <a href="discovery.html">Discover</a>
           </li>
-          <li class="menu_icons"><a href="join.html">Colors</a></li>
-          <li class="menu_icons"><a href="#.html">Typography</a></li>
+          <li class="menu_icons"><a href="join.html">Join</a></li>
+          <li class="menu_icons"><a href="#.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li class="social_icons">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </li>
+          <li class="social_icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </li>
+          <li class="social_icons">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </li>
         </ul>
       </nav>
     </header>
@@ -77,9 +90,18 @@
     </section>
   </body>
   <footer>
-    <section>
-      <img src="images/Portlandlogonew3.png" alt="portland logo" />
+    <section id="footergrid">
+      <section id="portlandimg">
+        <img src="images/portlandcoc1.png" alt="portland logo" />
+      </section>
+      <section id="copyright">
+        <p class="visited"></p>
+        <p id="date-today"></p>
+        <div id="legal">&copy; | Nathan D. Cook | BYU-Idaho</div>
+      </section>
     </section>
-    <div id="legal">&copy; ,;|;, Nathan D. Cook ,;|;, Idaho</div>
   </footer>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/lazyloading.js"></script>
+  <script src="scripts/lastdatevisited.js"></script>
 </html>

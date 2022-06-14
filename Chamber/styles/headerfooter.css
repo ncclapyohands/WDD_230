@@ -38,13 +38,7 @@ li a {
     width: 100%;
 }
 
-img{
-    display: block;
-    width: 20%;
-    margin-left: 15px;
-    margin-right: auto;
 
-}
 
 ul li a:hover{
     color: rgb(255, 234, 0);
@@ -53,16 +47,33 @@ ul li a:hover{
 
 nav ul li img {
     display: block;
-    width: 20%;
-    justify-content: flex-end;
+    width: 75%;
+
 }
 header{
     background-color: grey;
     text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#footergrid{
+    grid-template-columns: 1fr 1fr 1fr;
 }
 footer {
     border-top: 10px;
     text-align: center;
     background-color: grey;
-   
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+#portlandimg{
+    width: 10%;
+    grid-column: 0;
+}
+#copyright{
+    grid-column: 3/4;
 }
