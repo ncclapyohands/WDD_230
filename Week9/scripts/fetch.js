@@ -1,4 +1,4 @@
-const url = "https://pokeapi.co/api/v2/pokemon/ditto";
+const url = "";
 
 async function getPokemon(url) {
     const response = await fetch(url);
