@@ -5,7 +5,6 @@ function preloadImage(img){
     if(!src){
         return;
     }
-    console.log('hello there');
     img.src = src;
     
 }
@@ -22,7 +21,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
         else{
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
-            console.log('General Kenobi');
+            
         }
     });
 

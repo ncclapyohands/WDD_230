@@ -1,25 +1,53 @@
 *{
     font-family: 'Noto Sans JP', sans-serif;
 }
-nav{
+header{
     background-color: #1c314d;
-    list-style: none;
-    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+#logo{
+    display: block;
+    width: 30%;
+    float: left;
+    /*padding: 10px 0;*/
+
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav{
+    
+    float: right;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    list-style:none;
+    list-style: none;
     font-size: 1em;
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    
+    position: relative;
+    
 }
 
+nav a {
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+    
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*
 li a {
     text-decoration: none;
     color: rgb(225, 225, 225);
@@ -30,31 +58,40 @@ li a {
     font-weight: 600;
     
 }
+*/
+
+nav a::after{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(255, 187, 0);
+    bottom: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::after{
+    width: 100%;
+    
+}
+header p{
+    text-align: center;
+}
 .social_icons{
     margin: 0;
     padding: 0;
     width: 100%;
+    float: right;
 }
 
 
 
-ul li a:hover{
-    color: rgb(255, 234, 0);
-    font-weight: bolder;
-}
 
-nav ul li img {
-    display: block;
-    width: 75%;
 
-}
-header{
-    background-color: grey;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
+
+
 #footergrid{
     grid-template-columns: 1fr 1fr 1fr;
 }

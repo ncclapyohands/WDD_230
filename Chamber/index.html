@@ -22,9 +22,10 @@
     
       <!-----------------------------Nav------------------------------------->
       <header>
-      <nav>
+        <img src="images/portlandcoc1.png" alt="logo" id="logo"/>
+      <nav class="nav-bar">
         <ul>
-          <li><img src="images/portlandcoc1.png" alt="logo" /></li>
+          <li></li>
           <li class="hamburger"><a href="#">&#9776;</a></li>
           <li class="menu_icons"><a href="index.html">Directory</a></li>
           <li class="menu_icons">
@@ -33,7 +34,8 @@
           <li class="menu_icons"><a href="join.html">Join</a></li>
           <li class="menu_icons"><a href="#.html">Contact</a></li>
         </ul>
-        
+      </nav>
+      <nav class="icons">
         <ul>
           <li class="social_icons">
             <i class="fa fa-facebook-square" aria-hidden="true"></i>
@@ -45,14 +47,20 @@
             <i class="fa fa-twitter-square" aria-hidden="true"></i>
           </li>
         </ul>
-        <p id="date-today"></p>
+        
       </nav>
+      <p id="date-today"></p>
     </header>
     <!----------Grid Stuff----------->
     <section class="grid">
       <!-------------Hero----------------->
       <article id="hero">
-        <img src="images/mthoodportland.jpg" alt="mt hood" />
+        <picture>
+          <source media="(min-width: 64em)" srcset="images/large.jpg">
+          <source media="(min-width: 32.5em)" srcset="images/medium.jpg">
+          <img src="images/small.jpg" alt="hero image">
+        </picture>
+          
       </article>
       <!-------------New Releases----------------->
       <article id="release">
@@ -77,11 +85,27 @@
       <!-------------Events----------------->
       <article id="event">
         <h2>Events</h2>
-        <p>random text</p>
+        <h3>~4th of July Parade~ Main St. 9am</h3> 
+        <p>Fireworks @ Waterfront Park 10pm</p>
+        <p>Commerce Picnic 12pm September 5th</p>
       </article>
       <!-------------weather----------------->
       <article id="weather">
         <h2>Weather</h2>
+    <p>
+      The current temperature in Portland, Oregon is
+      <span id="current-temp"></span> &deg;F
+    </p>
+    <p>
+      Wind
+      <span id="wind"></span>
+      mph
+    </p>
+    <!--<p><span id="icon-src"></span></p>-->
+    <figure>
+      <img src="" alt="" id="weathericon" />
+      <figcaption></figcaption>
+    </figure>
       </article>
     </section>
   </body>
@@ -100,4 +124,5 @@
   <script src="scripts/main.js"></script>
   <script src="scripts/lazyloading.js"></script>
   <script src="scripts/hamburger.js"></script>
+  <script src="scripts/weather.js"></script>
 </html>
