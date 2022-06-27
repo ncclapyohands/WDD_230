@@ -15,6 +15,8 @@ article h2{
 }
 article h3{
     text-align: center;
+    padding: 10px;
+    font-size: x-large;
 }
 article p{
     text-align: center;
@@ -29,9 +31,14 @@ article p{
     margin-right: 20px;
     margin-top: 20px;
 }
+#hero{
+  height: 75%;
+   
+}
 
 #hero img{
     width: 100%;
+    height: 100%; 
     margin: 0;
     
 }
