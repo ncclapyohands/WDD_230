@@ -25,12 +25,9 @@
         <img src="images/portlandcoc1.png" alt="logo" id="logo"/>
       <nav class="nav-bar">
         <ul>
-          <li></li>
           <li class="hamburger"><a href="#">&#9776;</a></li>
           <li class="menu_icons"><a href="index.html">Directory</a></li>
-          <li class="menu_icons">
-            <a href="discovery.html">Discover</a>
-          </li>
+          <li class="menu_icons"><a href="discovery.html">Discover</a></li>
           <li class="menu_icons"><a href="join.html">Join</a></li>
           <li class="menu_icons"><a href="#.html">Contact</a></li>
         </ul>
@@ -56,7 +53,7 @@
       <!-------------Hero----------------->
       <article id="hero">
         <picture>
-          <source media="(min-width: 64em)" srcset="images/large.jpg">
+          <source media="(min-width: 64em)" srcset="images/multnomah.jpg">
           <source media="(min-width: 32.5em)" srcset="images/medium.jpg">
           <img src="images/small.jpg" alt="hero image">
         </picture>
@@ -71,7 +68,9 @@
       <article id="spotlight">
         <h2>Spotlights</h2>
         <section>
-          <p>spotlight 1</p>
+          <p>Come Join us for the Chamber of Commerce Picnic September 5th 12pm at Waterfront Park! 
+            The entire community is welcome! We will have bounce houses, water balloons, 
+            free school supplies, and tons of local businesses all trying their best to bring out the best in Portland!</p>
         </section>
         <section>
           <p>spotlight 2</p>
@@ -79,13 +78,15 @@
       </article>
       <!-------------Join----------------->
       <article id="join">
-        <h2>Join</h2>
+        <h2>Join Us</h2>
+        <p>Become apart of the local community around you</p>
+          <button id="join-us">Join Us</button>
       </article>
 
       <!-------------Events----------------->
       <article id="event">
         <h2>Events</h2>
-        <h3>~4th of July Parade~ Main St. 9am</h3> 
+        <h3>~4th of July Parade~ Main St. 9am</h3>
         <p>Fireworks @ Waterfront Park 10pm</p>
         <p>Commerce Picnic 12pm September 5th</p>
       </article>
@@ -101,7 +102,11 @@
       <span id="wind"></span>
       mph
     </p>
-    <!--<p><span id="icon-src"></span></p>-->
+    <p>
+      Wind Chill
+      <span id="wind-chill"></span> &deg;F
+    </p>
+    <p><span id="icon-src"></span></p>
     <figure>
       <img src="" alt="" id="weathericon" />
       <figcaption></figcaption>
@@ -118,8 +123,13 @@
         <p class="visited"></p>
         
         <div id="legal">&copy; | Nathan D. Cook | BYU-Idaho</div>
+        <p id="modified"></p>
+
       </section>
+
   </section>
+
+
   </footer>
   <script src="scripts/main.js"></script>
   <script src="scripts/lazyloading.js"></script>

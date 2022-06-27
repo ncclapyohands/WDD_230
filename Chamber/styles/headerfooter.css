@@ -9,19 +9,8 @@ header{
 #logo{
     display: block;
     width: 30%;
-    float: left;
-    /*padding: 10px 0;*/
-
 }
-header::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-nav{
-    
-    float: right;
-}
+ 
 
 nav ul {
     margin: 0;
@@ -34,7 +23,7 @@ nav ul li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 25px;
-    
+    width: max-content;
     position: relative;
     
 }
@@ -59,7 +48,7 @@ li a {
     
 }
 */
-
+/**************Nav**************************/
 nav a::after{
     content: '';
     display: block;
@@ -89,29 +78,9 @@ header p{
 
 
 
+/*********************Footer***********************/
 
 
-
-#footergrid{
-    grid-template-columns: 1fr 1fr 1fr;
-}
-footer {
-    border-top: 10px;
-    text-align: center;
-    background-color: grey;
-    margin-top: 10px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
-}
-#portlandimg{
-    width: 10%;
-    grid-column: 0;
-}
-#copyright{
-    grid-column: 3/4;
-}
 
 
 body {

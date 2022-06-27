@@ -7,13 +7,23 @@ const getWeather = async () => {
 
     let f= (jsObject.main.temp - 273.15) * 1.8 + 32;
     document.querySelector("#current-temp").textContent = f.toFixed(0);
+    
+    
 
     let wind = jsObject.wind.speed;
     document.querySelector("#wind").textContent = wind;
 
+    
+
+    let wind_chill = (jsObject.main.feels_like - 273.15) * 1.8 + 32;
+    if (wind > 3 && f <= 50){
+    document.querySelector("#wind-chill").textContent = wind_chill.toFixed(0);
+    }
+    else{
+      document.querySelector("#wind-chill").textContent = "N/A";
+    }
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description;
-    document.querySelector('#icon-src').textContent = iconsrc;
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
     document.querySelector('#weathericon').setAttribute('alt', desc);
     document.querySelector('figcaption').textContent = desc;

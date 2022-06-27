@@ -29,10 +29,32 @@
         grid-row: 3/5;
     }
     .menu_icons{
-        display: block;
+        display: flex;
+        justify-content: space-around;
     }
     .hamburger {
         display:none;
+    }
+
+    .nav-bar ul, .icons ul {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+    /****************Footer********************/
+
+    #footergrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #portlandimg{
+        width: 10%;
+        grid-column: 0;
+    }
+    #copyright{
+        grid-column: 2/3;
+        bottom: 0;
     }
     
 
