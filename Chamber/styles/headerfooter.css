@@ -81,6 +81,20 @@ header p{
 /*********************Footer***********************/
 
 
+#footergrid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+footer {
+    border-top: 10px;
+    text-align: center;
+    background-color: #1c314d;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
 
 
 body {
