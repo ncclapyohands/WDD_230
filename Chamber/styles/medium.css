@@ -31,14 +31,7 @@
     }
 
 
-    /******************Footer***********/
-    #footergrid{
-        grid-template-columns: 1fr 1fr;
-    }
     
-    #copyright{
-        grid-column: 0/3;
-    }
     
    
 }

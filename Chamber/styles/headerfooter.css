@@ -1,10 +1,19 @@
 *{
     font-family: 'Noto Sans JP', sans-serif;
 }
+
+body {
+    margin:0;
+    height:100%;
+    width: 100%;
+    
+}
 header{
     background-color: #1c314d;
     width: 100%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 #logo{
     display: block;
@@ -15,6 +24,7 @@ header{
 nav ul {
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
@@ -25,7 +35,7 @@ nav ul li {
     padding-top: 25px;
     width: max-content;
     position: relative;
-    
+    grid-column: 2/3;
 }
 
 nav a {
@@ -67,12 +77,15 @@ nav a:hover::after{
 }
 header p{
     text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: 500;
 }
 .social_icons{
     margin: 0;
     padding: 0;
     width: 100%;
-    float: right;
+    
 }
 
 
@@ -97,9 +110,41 @@ footer {
 }
 
 
-body {
-    margin:0;
-    height:100%;
-    width: 100%;
-    
+
+/* Medium Stuff */
+@media only screen and (min-width: 32.5em){
+/******************Footer***********/
+#footergrid{
+    grid-template-columns: 1fr 1fr;
+}
+
+#copyright{
+    grid-column: 1/3;
+}
+
+}
+
+
+
+/* Large Stuff */
+@media only screen and (min-width: 64em) {
+
+    header{
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-column: 2/4;
+    }
+    #footergrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #portlandimg{
+        width: 10%;
+        grid-column: 0;
+    }
+    #copyright{
+        grid-column: 2/3;
+        bottom: 0;
+        
+    }
 }
