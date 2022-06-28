@@ -14,31 +14,50 @@ fetch(requestURL)
     if (response.ok) {
       const jsonObject = await response.json();
       console.log(jsonObject);
-      const prophets = jsonObject['buisnesses'];
-      prophets.forEach(displayBusiness);
+      const businesses = jsonObject;
+      businesses.forEach(displayBusiness);
     }
   };
   
   getBusiness(requestURL);
 
   function displayBusiness(business) {
-    let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let dob = document.createElement('p');
-    let pob = document.createElement('p');
-    let img = document.createElement('img');
 
-    h2.textContent = business.name;
-    // dob.textContent = `${prophet.birthdate}`;
-    // pob.textContent = `${prophet.birthplace}`;
-    // img.setAttribute('src', prophet.imageurl);
-    // img.setAttribute('alt', `${prophet.name} ${prophet.lastname} ${prophet.order}`);
+    let card = document.createElement('section');
+    // let card = document.createElement('section');
+    // let h2 = document.createElement('h2');
     
-    card.appendChild(h2);
-    // card.appendChild(dob);
-    // card.appendChild(pob);
-    // card.appendChild(img);
-    document.querySelector('.cards').appendChild(card);
+    let img = document.createElement('img');
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let website = document.createElement('a');
+    
+
+    img.setAttribute('src', business.imgurl);
+    address.textContent = `${business.address}`;
+    phone.textContent = `${business.phone}`;
+    website.textContent = `${business.website}`;
+
+    card.appendChild(img);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
+
+    // let pob = document.createElement('p');
+    // let img = document.createElement('img');
+
+    // h2.textContent = business.;
+
+    // // dob.textContent = `${prophet.birthdate}`;
+    // // pob.textContent = `${prophet.birthplace}`;
+    // // img.setAttribute('src', prophet.imageurl);
+    // // img.setAttribute('alt', `${prophet.name} ${prophet.lastname} ${prophet.order}`);
+    
+    // card.appendChild(h2);
+    // // card.appendChild(dob);
+    // // card.appendChild(pob);
+    // // card.appendChild(img);
+     document.querySelector('.cards').appendChild(card);
 
 
   }
