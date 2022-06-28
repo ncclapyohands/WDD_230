@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://github.com/ncclapyohands/WDD_230/blob/master/Chamber/json/directory.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -9,47 +9,47 @@ fetch(requestURL)
   });
 
 
-  async function getProphets(requestURL) {
+  async function getBusiness(requestURL) {
     const response = await fetch(requestURL);
     if (response.ok) {
       const jsonObject = await response.json();
       console.log(jsonObject);
-      const prophets = jsonObject['prophets'];
-      prophets.forEach(displayProphets);
+      const prophets = jsonObject['buisnesses'];
+      prophets.forEach(displayBusiness);
     }
   };
   
-  getProphets(requestURL);
+  getBusiness(requestURL);
 
-  function displayProphets(prophet) {
+  function displayBusiness(business) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let dob = document.createElement('p');
     let pob = document.createElement('p');
     let img = document.createElement('img');
 
-    h2.textContent = prophet.name + ' ' + prophet.lastname;
-    dob.textContent = `${prophet.birthdate}`;
-    pob.textContent = `${prophet.birthplace}`;
-    img.setAttribute('src', prophet.imageurl);
-    img.setAttribute('alt', `${prophet.name} ${prophet.lastname} ${prophet.order}`);
+    h2.textContent = business.name;
+    // dob.textContent = `${prophet.birthdate}`;
+    // pob.textContent = `${prophet.birthplace}`;
+    // img.setAttribute('src', prophet.imageurl);
+    // img.setAttribute('alt', `${prophet.name} ${prophet.lastname} ${prophet.order}`);
     
     card.appendChild(h2);
-    card.appendChild(dob);
-    card.appendChild(pob);
-    card.appendChild(img);
+    // card.appendChild(dob);
+    // card.appendChild(pob);
+    // card.appendChild(img);
     document.querySelector('.cards').appendChild(card);
 
 
   }
 
-  function displayTable(prophet) {
+  function displayTable(business) {
     let list_row = document.createElement('tr');
     let td_name = document.createElement('td');
-    td_name.textContent = prophet.name + ' ' + prophet.lastname;
+    td_name.textContent = business.name;
 
     let td_dob = document.createElement('td');
-    td_dob.textContent = prophet.birthdate;
+    td_dob.textContent = business.birthdate0;
 
     list_row.appendChild(td_name);
     list_row.appendChild(td_dob);
