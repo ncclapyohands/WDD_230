@@ -1,4 +1,4 @@
-const requestURL = 'https://github.com/ncclapyohands/WDD_230/blob/master/Chamber/json/directory.json';
+const requestURL = 'https://raw.githubusercontent.com/ncclapyohands/WDD_230/master/Chamber/json/directory.json';
 
 fetch(requestURL)
   .then(function (response) {

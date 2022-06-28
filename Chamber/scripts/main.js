@@ -40,7 +40,7 @@ else{
 
 
 // Todays Date
-
+if(document.querySelector('#date-today')){
 let tdate = new Date();
 if (tdate.getDay() == 1 || tdate.getDay() == 2){
     document.querySelector('#date-today').textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.  ||  ";
@@ -49,13 +49,13 @@ if (tdate.getDay() == 1 || tdate.getDay() == 2){
 
 const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(tdate);
 document.querySelector('#date-today').textContent += fullDate;
-console.log("I'm Here");
+
 
 
 
 let modified = document.lastModified;
 document.querySelector('#modified').textContent = "Last Date Modified: " + modified;
-
+}
 
 
 
