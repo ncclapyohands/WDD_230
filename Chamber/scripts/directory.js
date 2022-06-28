@@ -14,6 +14,7 @@ fetch(requestURL)
     if (response.ok) {
       const jsonObject = await response.json();
       console.log(jsonObject);
+      
       const businesses = jsonObject;
       businesses.forEach(displayBusiness);
     }
@@ -33,10 +34,11 @@ fetch(requestURL)
     let website = document.createElement('a');
     
 
-    img.setAttribute('src', business.imgurl);
+    img.setAttribute('src', business.logo);
     address.textContent = `${business.address}`;
     phone.textContent = `${business.phone}`;
     website.textContent = `${business.website}`;
+    website.setAttribute('href', business.website);
 
     card.appendChild(img);
     card.appendChild(address);
