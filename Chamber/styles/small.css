@@ -1,6 +1,6 @@
 
 main{
-    max-width: 85%;
+    max-width: 100%;
     margin: 0 auto;
 }
 body{
@@ -34,6 +34,7 @@ article p{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    grid-template-rows: max-content;
 }
 #hero{
   /* height: 75%; */

@@ -87,6 +87,15 @@ header p{
     width: 100%;
     
 }
+.nav-bar.responsive ul li{
+    display:flex;
+}
+.nav-bar.responsive{
+    display: block;
+    text-align: center;
+}
+.nav-bar.responsive {position: relative;}
+
 
 
 
@@ -122,6 +131,20 @@ footer {
     grid-column: 1/3;
 }
 
+/* Nav Bar Hamburger */
+/* .nav-bar #hamburger{
+    grid-column: 3/4;
+    
+} */
+.nav-bar.responsive ul li{
+    display:flex;
+}
+.nav-bar.responsive{
+    display: block;
+    text-align: center;
+}
+.nav-bar.responsive {position: relative;}
+
 }
 
 
@@ -145,6 +168,7 @@ footer {
     #copyright{
         grid-column: 2/3;
         bottom: 0;
-        
     }
+    
+
 }
