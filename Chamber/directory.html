@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Directory</title>
     <link href="styles/zero.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/headerfooter.css" />
+    <link href="styles/small.css" rel="stylesheet" />
+    <link href="styles/medium.css" rel="stylesheet" />
+    <link href="styles/large.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="styles/headerfooter.css" />
+
     <script
       src="https://kit.fontawesome.com/45ccb5ad1c.js"
       crossorigin="anonymous"
@@ -22,9 +26,9 @@
   <body>
     <header>
       <img src="images/portlandcoc1.png" alt="logo" id="logo" />
-      <nav class="nav-bar">
+      <nav class="nav-bar" id="topnav">
         <ul>
-          <li class="hamburger"><a href="#">&#9776;</a></li>
+          <li id="hamburger"><a href="#">&#9776;</a></li>
           <li class="menu_icons"><a href="index.html">Home</a></li>
           <li class="menu_icons"><a href="directory.html">Directory</a></li>
           <li class="menu_icons"><a href="discovery.html">Discover</a></li>
@@ -32,35 +36,41 @@
           <li class="menu_icons"><a href="#.html">Contact</a></li>
         </ul>
       </nav>
-      <nav class="icons">
-        <ul>
-          <li class="social_icons">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </li>
-          <li class="social_icons">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </li>
-          <li class="social_icons">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </li>
-        </ul>
-      </nav>
+
       <p id="date-today"></p>
     </header>
 
     <main>
+      <img src="images/gridview.png" alt="grid view" />
+      <img src="images/rowview.png" alt="row view" />
       <div class="cards"></div>
+      <table class="rows"></table>
     </main>
 
     <footer>
       <section id="footergrid">
         <section id="portlandimg">
-          <img src="images/portlandcoc1.png" alt="portland logo" />
+          <img src="images/portlandcoc1.webp" alt="portland logo" />
         </section>
+        <nav class="icons">
+          <ul>
+            <li class="social_icons">
+              <img src="images/facebook.png" alt="facebook logo" />
+            </li>
+
+            <li class="social_icons">
+              <img src="images/instagram.png" alt="instagram logo" />
+            </li>
+            <li class="social_icons">
+              <img src="images/twitter.png" alt="twitter logo" />
+            </li>
+          </ul>
+        </nav>
         <section id="copyright">
           <p class="visited"></p>
 
           <div id="legal">&copy; | Nathan D. Cook | BYU-Idaho</div>
+          <p id="modified"></p>
         </section>
       </section>
     </footer>
@@ -70,4 +80,5 @@
   <script src="scripts/lazyloading.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/directory.js"></script>
+  <script src="scripts/weather.js"></script>
 </html>

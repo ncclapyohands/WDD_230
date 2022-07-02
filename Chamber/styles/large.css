@@ -53,13 +53,13 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     
-    #portlandimg{
-        width: 10%;
-        grid-column: 0;
-    }
+    
     #copyright{
         grid-column: 2/3;
         bottom: 0;
+    }
+    #portlandimg{
+        width: 100%;
     }
     
 

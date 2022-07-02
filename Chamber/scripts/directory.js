@@ -17,6 +17,7 @@ fetch(requestURL)
       
       const businesses = jsonObject;
       businesses.forEach(displayBusiness);
+      businesses.forEach(displayTable);
     }
   };
   
@@ -69,10 +70,12 @@ fetch(requestURL)
     let td_name = document.createElement('td');
     td_name.textContent = business.name;
 
-    let td_dob = document.createElement('td');
-    td_dob.textContent = business.birthdate0;
+    let address = document.createElement('td');
+    address.textContent = business.address;
+
 
     list_row.appendChild(td_name);
-    list_row.appendChild(td_dob);
+    list_row.appendChild(address);
     document.querySelector('table').appendChild(list_row);
   }
+
