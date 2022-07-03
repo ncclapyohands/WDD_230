@@ -3,7 +3,7 @@
         "logo": "./images/powells.jpg",
         "address": "1005 W Burnside St",
         "phone": "(800) 878-7323",
-        "website": "https://www.powells.com/locations/powells-city-of-books"
+        "website": "https://www.powells.com"
     },
 
     {
@@ -14,17 +14,17 @@
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "./images/nike.jpg",
+        "address": "638 SW 5th Ave",
+        "phone": "(503) 221-6453",
+        "website": "nike.com"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "saltstraw.jpg",
+        "address": "838 NW 23rd Ave",
+        "phone": "(971) 271-8168",
+        "website": "https://saltandstraw.com/"
     },
 
     {
