@@ -36,6 +36,12 @@ article p{
     margin-top: 20px;
     grid-template-rows: max-content;
 }
+#weatherstuff{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #hero{
   /* height: 75%; */
    

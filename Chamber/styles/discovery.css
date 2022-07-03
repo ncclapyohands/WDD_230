@@ -1,4 +1,4 @@
-
+/* 
 
 body{
     display: flex;
@@ -39,4 +39,42 @@ section p {
 
 section img:hover{
     border: 1px black solid;
+} */
+.board{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    align-content: space-around;
+
 }
+.board img{
+    width: 100%;
+}
+
+.polaroid:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid {
+    width: 30%;
+    background-color: white;
+    margin: 10px;
+    
+  }
+  #team{
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid #3d5a80;
+    
+  }
+  
+.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  #flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
