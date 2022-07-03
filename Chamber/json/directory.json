@@ -43,43 +43,43 @@
 
     {
         "logo": "./images/burgerville.png",
-        "address": "https://www.burgerville.com/",
+        "address": "1135 NE Martin Luther King Jr Blvd",
         "phone": "(503) 235-6858",
         "website": "https://www.burgerville.com/"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "./images/tillamook.png",
+        "address": "4165 N Hwy 101",
+        "phone": "(503) 815-1300",
+        "website": "https://www.tillamook.com/"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "./images/adidas.png",
+        "address": "5055 N Greeley Ave",
+        "phone": "(971) 234-2300",
+        "website": "https://www.adidas.com/us"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "images/pcr.png",
+        "address": "340 SE 7th Ave",
+        "phone": "(503) 236-7378",
+        "website": "https://www.portlandcoffeeroasters.com/"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "./images/dutch.png",
+        "address": "430 NE Lloyd Blvd",
+        "phone": "(541) 955-4700",
+        "website": "https://www.dutchbros.com/"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "chalice.png",
+        "address": "1917 SE 7th Ave",
+        "phone": "(503) 788-9999",
+        "website": "https://shop.chalicebrandsltd.com/"
     }
 ]
