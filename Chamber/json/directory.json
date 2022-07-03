@@ -63,7 +63,7 @@
     },
 
     {
-        "logo": "images/pcr.png",
+        "logo": "./images/pcr.png",
         "address": "340 SE 7th Ave",
         "phone": "(503) 236-7378",
         "website": "https://www.portlandcoffeeroasters.com/"
@@ -77,7 +77,7 @@
     },
 
     {
-        "logo": "chalice.png",
+        "logo": "./images/chalice.png",
         "address": "1917 SE 7th Ave",
         "phone": "(503) 788-9999",
         "website": "https://shop.chalicebrandsltd.com/"
