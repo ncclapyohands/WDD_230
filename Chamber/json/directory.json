@@ -7,14 +7,14 @@
     },
 
     {
-        "logo": "https://github.com/ncclapyohands/WDD_230/blob/813cf9ca99b27f20840588d2d76b2873397155ef/Chamber/images/voodoo.webp",
+        "logo": "./images/voodoo.webp",
         "address": "22 SW 3rd Ave",
         "phone": "(503) 241-4723",
         "website": "https://www.voodoodoughnut.com/"
     },
 
     {
-        "logo": "./images/voodoo.webp",
+        "logo": "",
         "address": "",
         "phone": "",
         "website": ""
