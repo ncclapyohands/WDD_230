@@ -3,7 +3,7 @@
         "logo": "./images/powells.jpg",
         "address": "1005 W Burnside St",
         "phone": "(800) 878-7323",
-        "website": "https://www.powells.com"
+        "website": "https://www.powells.com/"
     },
 
     {
@@ -17,35 +17,35 @@
         "logo": "./images/nike.jpg",
         "address": "638 SW 5th Ave",
         "phone": "(503) 221-6453",
-        "website": "nike.com"
+        "website": "https://nike.com/"
     },
 
     {
-        "logo": "saltstraw.jpg",
+        "logo": "./images/saltstraw.jpg",
         "address": "838 NW 23rd Ave",
         "phone": "(971) 271-8168",
         "website": "https://saltandstraw.com/"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "./images/columbia.webp",
+        "address": "911 SW Broadway",
+        "phone": "(503) 238-0118",
+        "website": "https://columbia.com/"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "./images/northface.jpg",
+        "address": "1202 NW Davis St",
+        "phone": "(503) 727-0200",
+        "website": "https://www.thenorthface.com/"
     },
 
     {
-        "logo": "",
-        "address": "",
-        "phone": "",
-        "website": ""
+        "logo": "./images/burgerville.png",
+        "address": "https://www.burgerville.com/",
+        "phone": "(503) 235-6858",
+        "website": "https://www.burgerville.com/"
     },
 
     {

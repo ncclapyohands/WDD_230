@@ -9,18 +9,26 @@
     justify-content: center;
     }
     .cards section {
-    border: 1px solid navy;
-    background-color: lightblue;
-    padding: 30px;
-    text-align: center;
-    width: 300px;
-    margin: 20px;
+
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        margin: 10px;
+    }
+    .cards section:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     .cards img {
-    width: 90%;
-    box-shadow: 5px 10px 8px 5px #888888;
-    }
-
-
+    width: 100%;
     
+    }
+    .cards p{
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .cards a{
+        text-align: center;
+        padding: 10px 20px;
+    }
+    
+
