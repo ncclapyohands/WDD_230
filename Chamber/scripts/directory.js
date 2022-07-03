@@ -70,12 +70,19 @@ fetch(requestURL)
     let td_name = document.createElement('td');
     td_name.textContent = business.name;
 
+
     let address = document.createElement('td');
     address.textContent = business.address;
+    let phone = document.createElement('td');
+    phone.textContent = business.phone;
+    let website = document.createElement('td');
+    website.textContent = business.website;
 
 
     list_row.appendChild(td_name);
     list_row.appendChild(address);
+    list_row.appendChild(phone);
+    list_row.appendChild(website);
     document.querySelector('table').appendChild(list_row);
   }
 
