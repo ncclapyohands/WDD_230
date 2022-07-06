@@ -2,31 +2,31 @@
     width: 100%;
     margin: 0 auto;
     }
-    .cards {
+    #cards {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     }
-    .cards section {
+    #cards section {
 
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
         margin: 10px;
     }
-    .cards section:hover{
+    #cards section:hover{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
-    .cards img {
+    #cards img {
     width: 100%;
     
     }
-    .cards p{
+    #cards p{
         text-align: center;
         padding: 10px 20px;
     }
-    .cards a{
+    #cards a{
         text-align: center;
         padding: 10px 20px;
     }
@@ -39,6 +39,10 @@
     .gridrow-menu img{
         width: 5%;
         margin: 10px;
+    }
+
+    .hidden {
+        display:none;
     }
     
 
