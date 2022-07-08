@@ -87,48 +87,78 @@ fetch(requestURL)
   }
 
 
-function toggleHidden() {
+// function toggleHidden() {
   
-  let card = document.getElementById('cards');
-  let row = document.getElementById('hidden');
-  let rowshow = document.getElementById('rows');
-  let cardshow = document.getElementById('cards');
-  console.log(card);
-  console.log(row);
-  let cardid = card.getAttribute('id');
-  let rowid = row.getAttribute('id');
+//   let card = document.getElementById('cards');
+//   let row = document.getElementById('hidden');
+//   let rowshow = document.getElementById('rows');
+//   let cardshow = document.getElementById('cards');
+//   console.log(card);
+//   console.log(row);
+//   let cardid = card.getAttribute('id');
+//   let rowid = row.getAttribute('id');
 
-  if (cardid === "cards") {
-    cardid = 'hidden';
-    card.setAttribute('id', cardid);
-    rowid = 'rows';
-    row.setAttribute('id', rowid);
-  }
-
-
-  if (rowid === "rows") {
-    rowid = 'hidden';
-    row.setAttribute('id', rowid);
-    cardid = 'cards';
-    card.setAttribute('id', cardid);
-  }
+//   if (cardid === "cards") {
+//     cardid = 'hidden';
+//     card.setAttribute('id', cardid);
+//     rowid = 'rows';
+//     row.setAttribute('id', rowid);
+//   }
 
 
-  // if (cardid === "cards hidden") {
-  //   cardid = 'hidden';
-  //   card.setAttribute('id', cardid);
-  //   rowid = 'rowhidden';
-  //   row.setAttribute('id', rowid);
-  // }
-  // if (rowid === "rowhidden") {
-  //   rowid = 'hidden';
-  //   row.setAttribute('id', rowid);
-  //   cardid = 'cards';
-  //   card.setAttribute('id', cardid);
-  // }
-}
+//   if (rowid === "rows") {
+//     rowid = 'hidden';
+//     row.setAttribute('id', rowid);
+//     cardid = 'cards';
+//     card.setAttribute('id', cardid);
+//   }
+
+
+//   // if (cardid === "cards hidden") {
+//   //   cardid = 'hidden';
+//   //   card.setAttribute('id', cardid);
+//   //   rowid = 'rowhidden';
+//   //   row.setAttribute('id', rowid);
+//   // }
+//   // if (rowid === "rowhidden") {
+//   //   rowid = 'hidden';
+//   //   row.setAttribute('id', rowid);
+//   //   cardid = 'cards';
+//   //   card.setAttribute('id', cardid);
+//   // }
+// }
 
 // toggleHidden();
 // displayBusiness();
+
+
+function toggleHidden() {
+
+  let card = document.getElementById('cards');
+  let row = document.getElementById('rows');
+  
+  let cardclass = card.getAttribute('class');
+  let rowclass = row.getAttribute('class');
+  
+  if (rowclass === "show") {
+  
+  rowclass = 'hidden';
+  row.setAttribute('class', rowclass);
+  
+  cardclass = 'show';
+  card.setAttribute('class', cardclass);
+  console.log('hide row, show card');
+  }
+  else if (cardclass === "show") {
+  
+  cardclass = 'hidden';
+  
+  card.setAttribute('class', cardclass);
+  
+  rowclass = 'show';
+  row.setAttribute('class', rowclass);
+  console.log('hide card, show row');
+  }
+  }
 document.getElementById("grid").addEventListener('click', toggleHidden);
 document.getElementById("row").addEventListener('click', toggleHidden);

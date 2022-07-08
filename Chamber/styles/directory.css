@@ -2,7 +2,7 @@
     width: 100%;
     margin: 0 auto;
     }
-    #cards {
+    div.show {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -40,9 +40,45 @@
         width: 5%;
         margin: 10px;
     }
-
+    #grid:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #row:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
     .hidden {
         display:none;
     }
-    
+
+
+    table {
+        text-align: center;
+        margin: 100px auto;
+        border: 1px solid black;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        font-size: 1.2em;
+        padding: 10px;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #ccc;
+      }
+      tbody tr:nth-child(even) {
+        background-color: rgb(233, 233, 233);
+      }
+      thead,
+      tfoot {
+        background-color: rgb(32, 111, 138);
+      }
+      tbody tr:first-child {
+        background-color: lightblue;
+      }
+
 
