@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/45ccb5ad1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/replaylogo.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replay.Live</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!---------------NAV BAR------------------------------>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/replaylogo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Consulting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#price">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!------------Main---------------->
+
+    <!-----------Slider------------------>
+    <div id="slider">
+      <div id="headerSlider" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#headerSlider"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#headerSlider" data-bs-slide-to="1"></li>
+          <li data-target="#headerSlider" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/largelogo.jpeg"
+              class="d-block w-100"
+              alt="large replay logo"
+            />
+            <div class="carousel-caption">
+              <h5>Changing the Gymnasium Experience Forever</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/sample3.jpg"
+              class="d-block w-100"
+              alt="Gaming Setup"
+            />
+            <div class="carousel-caption">
+              <h5>Marketing Local Businesses</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/student-section.jpg"
+              class="d-block w-100"
+              alt="The Arc Reactor"
+            />
+            <div class="carousel-caption">
+              <h5>Bringing on the new level of home field advantage</h5>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#headerSlider"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#headerSlider"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!----------------About--------------->
+    <section id="About">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-content">
+              <h2>About Us</h2>
+              There are over 15 million students attending over 20,000 high
+              schools scattered across America. We seek to provide an experience
+              that no one has ever seen before in their local gymnasium. Slow
+              Motion, Live Action, Instant Replay.
+            </div>
+            <a href="about.html">
+              <button type="button" class="btn btn-primary">Read More>></button>
+            </a>
+          </div>
+
+          <div class="col-md-6 skills-bar">
+            <p>C++</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%">75%</div>
+            </div>
+
+            <p>Java</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+
+            <p>Html/CSS/JavaScript</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+
+            <p>Electrical Engineering</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------Consulting--------------->
+    <section id="services">
+      <div class="container">
+        <h1>Why Replay?</h1>
+      </div>
+      <div class="row services">
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Simple for Businesses</h3>
+          <p>
+            You don't need to be tech savy to use our ad design program. Our
+            advertisement generator allows you to select your favorite template
+            and impliment your business into it. You can even upload your own
+            advertisement to our system and we take care of the rest.
+          </p>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fas fa-plug"></i>
+          </div>
+          <h3>Electrical Engineering</h3>
+          <p>
+            Our Engineers were trained in our award winning NVIIIEE Program
+            where they are required to recircuit motherboards, build an
+            electromagnetic generator, and write in-depth scematics of
+            electrical systems. Whatever the task you have for us, we can
+            accomplish it while exceeding expectations.
+          </p>
+        </div>
+
+        <!-- <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Computer Science</h3>
+          <p>
+            Our Software Development team is on a WHOLE different level. Whether
+            it's coding artificial intelligence, chemical compound calculators,
+            you name it, they've done it. With expirence in Swift, C++, C Sharp,
+            Java, Python, whatever your company uses, we are the best in the
+            industry.
+          </p>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fas fa-tablet"></i>
+          </div>
+          <h3>App Development</h3>
+          <p>
+            Creating an appealing app can be extremely difficult. Whether you're
+            a massive corporation, small business with a big idea, or an entry
+            app developer, we can revamp, rebuild, or redesign your app. We can
+            make your business appear in the top 100 in the App Store.
+          </p>
+        </div> -->
+      </div>
+    </section>
+    <!----------Team Members------------>
+    <section id="team">
+      <div class="container">
+        <h1>Our Team - Choose your Fighter</h1>
+        <div class="row">
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="Pictures/danny2.jpg" class="img-responsive" />
+              <ul>
+                <a
+                  href="https://www.facebook.com/THE.Egg.man.69"
+                  target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a href="https://twitter.com/dannydevito" target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/dannydevito0/"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>Danny DeVeto</h2>
+            <h3>Electrical Director</h3>
+            <p>He's been in the industry longer than I have been alive</p>
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="Pictures/morgan-freeman.jpg" class="img-responsive" />
+              <ul>
+                <a href="https://www.facebook.com/MorganFreeman" target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/MorganFreeman/"
+                  target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://twitter.com/morgan_freeman/status/1316436536049586176"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>Morgan Freeman</h2>
+            <h3>Sometimes God</h3>
+            <p>
+              Morgan Freeman literally narrates God's voice of course he's here.
+            </p>
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="Pictures/rdj.jpg" class="img-responsive" />
+              <ul>
+                <a
+                  href="https://www.facebook.com/robertdowneyjr"
+                  target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a href="https://twitter.com/RobertDowneyJr" target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/robertdowneyjr/"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>Tony Stark</h2>
+            <h3>Being Tony</h3>
+            <p>
+              AKA Iron Man. Literally the only person truly qualified. Do I need
+              to say more?
+            </p>
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="Pictures/kermit.jpg" class="img-responsive" />
+              <ul>
+                <a href="https://www.facebook.com/MuppetsKermit" target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a href="https://twitter.com/KermitTheFrog" target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/kermitthefrog/"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>Kirmit the Frog</h2>
+            <h3>App Dood</h3>
+            <p>He doesn't only drink tea</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------Price Plans------------------>
+    <section id="price">
+      <div class="container">
+        <h1>Price Plans</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"A Website" Deal!</h2>
+                <p>$399/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Squire</li>
+                  <li><i class="fa fa-times-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-times-circle"></i>Goat Member</li>
+                  <li><i class="fa fa-times-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-times-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"Not a Website" Deal!</h2>
+                <p>$420/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-check-circle"></i>Goat Member</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Goat</li>
+                  <li><i class="fa fa-times-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-times-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"Hardware" Deal!</h2>
+                <p>A Human Hand/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-check-circle"></i>Guild Membership</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Robe Wizard</li>
+                  <li><i class="fa fa-check-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-times-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=fRscYVvEFt8"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"A Trash Website" Deal!</h2>
+                <p>3 Bars of Gold/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-check-circle"></i>Guild Member</li>
+                  <li><i class="fa fa-check-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Dragon</li>
+                  <li><i class="fa fa-check-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=fRscYVvEFt8"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------Get In Touch---------------->
+
+    <!-----------Footer-------------->
+    <footer>
+      <div id="legal">&copy; Copyright 2022. All Rights Reserved.</div>
+    </footer>
+    <!---------------Scroll------------------->
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>

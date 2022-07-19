@@ -1,0 +1,87 @@
+/******About******/
+html{
+  height: 100%;
+}
+main{
+  flex: 1;
+}
+
+body, main{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: #ccc;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex: 1;
+}
+#content{
+  margin: 0 auto;
+  width: 75%;
+  border: 2px solid #ccc;
+  background-image: url(banff.jpg);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+}
+#content img{
+  width: 50%;
+  border: 2px solid black;
+  align-self: center;
+}
+#content h1{
+  text-align: center;
+  width: 100%;
+}
+#content p{
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+/******Nav Bar******/
+  #nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+  }
+  .navbar-nav li{
+    padding: 0 10px;
+  }
+  .navbar-nav li a{
+    float: right;
+    text-align: left;
+  }
+  /***Change highlight color***/
+  #nav-bar ul li a:hover{
+    color: #007bff!important;
+  }
+  .navbar{
+    background: #fff;
+  }
+  .navbar-toggler{
+    border: none!important;
+  }
+  .nav-link{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+  }
