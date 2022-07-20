@@ -209,7 +209,7 @@ body footer nav ul li {
   transition: 1.0s;
 }
 
-/********************Team Members************************/
+/********************How it works************************/
 #team{
   padding-top: 65px;
   padding-bottom: 50px;
@@ -285,6 +285,10 @@ h1::after{
 .img-box ul, .img-box ul li{
   transition: 0.5s;
 }
+#replay-logo{
+  width: 100%;
+}
+
 /*--------Price Plans----------*/
 #price{
   padding: 65px 0;

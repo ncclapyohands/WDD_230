@@ -1,19 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+/*-------Nav----------*/
 #nav-bar{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  .navbar-brand img{
-    height: 40px;
-    padding-left: 30px;
-  }
-  .navbar-nav li{
-    padding: 0 10px;
-  }
-  .navbar-nav li a{
-    float: right;
-    text-align: left;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand img{
+  height: 40px;
+  padding-left: 30px;
+}
+.navbar-nav li{
+  padding: 0 10px;
+}
+.navbar-nav li a{
+  float: right;
+  text-align: left;
+}
+/***Change highlight color***/
+#nav-bar ul li a:hover{
+  color: #007bff!important;
+}
+.navbar{
+  background: #fff;
+}
+.navbar-toggler{
+  border: none!important;
+}
+.nav-link{
+  color: #555!important;
+  font-weight: 600;
+  font-size: 16px;
+}
   /***Change highlight color***/
   #nav-bar ul li a:hover{
     color: #007bff!important;
@@ -40,7 +63,7 @@ body{
     overflow: hidden;
 }
 #contact-section{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),url(iphone.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),url(../images/replaylogo.png);
     background-size: cover;
     background-position: center;
     height: 100%;

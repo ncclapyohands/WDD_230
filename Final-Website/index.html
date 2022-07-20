@@ -1,109 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Principles</title>
-    <link href="styles/zero.css" rel="stylesheet" />
-    <link href="styles/small.css" rel="stylesheet" />
-    <link href="styles/medium.css" rel="stylesheet" />
-    <link href="styles/large.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/headerfooter.css" />
     <script
-      src="https://kit.fontawesome.com/45ccb5ad1c.js"
+      src="https://kit.fontawesome.com/fb4622ad06.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/replaylogo.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replay.Live</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
   <body>
-    
-      <!-----------------------------Nav------------------------------------->
-      <header>
-        <section class="header-logo">
-          <img src="images/replaylogo.png" alt="Replay.live logo" id="header-logo"/>
-        </section> 
-      <nav class="nav-bar" id="topnav">
-        <ul>
-          <li id="hamburger"><a href="#">&#9776;</a></li>
-          <li class="menu_icons"><a href="index.html">Home</a></li>
-          <li class="menu_icons"><a href="directory.html">Directory</a></li>
-          <li class="menu_icons"><a href="discovery.html">Discover</a></li>
-          <li class="menu_icons"><a href="join.html">Join</a></li>
-          <li class="menu_icons"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <p id="date-today"></p>
-    </header>
-    <main>
-
-      <!----------- slideshow ----------->
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="images/student-section.jpg" style="width:100%; height: 700px;">
-          <div class="text">Caption Text</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="images/large_photo.jpg" style="width:100%; height: 700px;">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="images/sample3.jpg" style="width:100%; height: 700px;">
-          <div class="text">Caption Three</div>
-        </div>
-        
-        </div>
-        <br>
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
-    </main>
-    <footer>
-      <section id="footergrid">
-        <section id="replay-logo">
-          <img src="images/replaylogo.png" alt="replay.live logo" id="footer-logo"/>
-        </section>
-        <nav class="icons">
-          <ul>
-            <li class="social_icons">
-              <img src="images/facebook.png" alt="facebook logo">
+    <!---------------NAV BAR------------------------------>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/replaylogo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            
-            <li class="social_icons">
-              <img src="images/instagram.png" alt="instagram logo">
+            <li class="nav-item">
+              <a class="nav-link" href="#team">How does it work?</a>
             </li>
-            <li class="social_icons">
-              <img src="images/twitter.png" alt="twitter logo">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Why Replay?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#price">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
           </ul>
-          
-        </nav>
-        <section id="copyright">
-          <p class="visited"></p>
-          
-          <div id="legal">&copy; | Replay.Live </div>
-          <p id="modified"></p>
-  
-        </section>
-        
+        </div>
+      </nav>
     </section>
-  
-  
+
+    <!------------Main---------------->
+
+    <!-----------Slider------------------>
+    <div id="slider">
+      <div id="headerSlider" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#headerSlider"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#headerSlider" data-bs-slide-to="1"></li>
+          <li data-target="#headerSlider" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/largelogo.jpeg"
+              class="d-block w-100"
+              alt="large replay logo"
+            />
+            <div class="carousel-caption">
+              <h5>Changing the Gymnasium Experience Forever</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/sample3.jpg"
+              class="d-block w-100"
+              alt="Gaming Setup"
+            />
+            <div class="carousel-caption">
+              <h5>Marketing Local Businesses</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/student-section.jpg"
+              class="d-block w-100"
+              alt="The Arc Reactor"
+            />
+            <div class="carousel-caption">
+              <h5>Bringing on the new level of home field advantage</h5>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#headerSlider"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#headerSlider"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!----------How it works------------>
+    <section id="team">
+      <div class="container">
+        <h1>How does it work?</h1>
+        <div class="row">
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img
+                src="images/replaylogo.png"
+                id="replay-logo"
+                class="img-responsive"
+              />
+              <ul>
+                <a
+                  href="https://www.facebook.com/THE.Egg.man.69"
+                  target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a href="https://twitter.com/dannydevito" target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/dannydevito0/"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>Contact Us!</h2>
+            <p>
+              The first step to take is for administration to contact us to see
+              if you're eligible for our program. If you're a business, sign in
+              and begin creating your ad!
+            </p>
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img
+                src="images/led.jpg"
+                class="img-responsive"
+                style="width: 100%"
+              />
+              <ul>
+                <a href="https://www.facebook.com/MorganFreeman" target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/MorganFreeman/"
+                  target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://twitter.com/morgan_freeman/status/1316436536049586176"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>The Display</h2>
+
+            <p>
+              We work with the schools to set up all of the hardware and
+              software necessary to display the slow motion replay. This
+              installation process can happen all within the span of spring
+              break and the best part is all the equipment pays itself off in
+              just two to three years.
+            </p>
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img
+                src="images/teach.jpg"
+                class="img-responsive"
+                style="width: 100%"
+              />
+              <ul>
+                <a
+                  href="https://www.facebook.com/robertdowneyjr"
+                  target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a href="https://twitter.com/RobertDowneyJr" target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/robertdowneyjr/"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>Teach</h2>
+            <p>
+              After installing everything, we teach the staff members to use the
+              product. Not only is the software easy to use, but the students
+              can run it themselves. This teaches the students how basic video
+              production works.
+            </p>
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="Pictures/kermit.jpg" class="img-responsive" />
+              <ul>
+                <a href="https://www.facebook.com/MuppetsKermit" target="_blank"
+                  ><li><i class="fa fa-facebook"></i></li
+                ></a>
+                <a href="https://twitter.com/KermitTheFrog" target="_blank"
+                  ><li><i class="fa fa-twitter"></i></li
+                ></a>
+                <a
+                  href="https://www.instagram.com/kermitthefrog/"
+                  target="_blank"
+                  ><li><i class="fa fa-instagram"></i></li
+                ></a>
+              </ul>
+            </div>
+            <h2>The Businesses</h2>
+            <p>
+              Local businesses build their ads right here on the Replay.Live
+              website and, after getting administrative approval, their ad may
+              display in the high school gymnasium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------Consulting--------------->
+    <section id="services">
+      <div class="container">
+        <h1>Why Replay?</h1>
+      </div>
+      <div class="row services">
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3>Simple for Businesses</h3>
+          <p>
+            You don't need to be tech savvy to use our ad design program. Our
+            advertisement generator allows you to select your favorite template
+            and implement your business into it. You can even upload your own
+            advertisement to our system and we take care of the rest.
+          </p>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h3>Full Package</h3>
+          <p>
+            Replay.Live's goal it to create the one-stop shop for schools and
+            businesses alike. Advertising businesses and changing the
+            entertainment dynamic of the high school gymnasium forever. All
+            right here at the tip of your fingers.
+          </p>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3>Education</h3>
+          <p>
+            By using Replay.Live, we give the opportunity to students to learn
+            Video Production. After teaching staff, student can enroll to
+            learning how to use slow motion instant replay in their local gyms
+            displaying the talent of the athlete and the student.
+          </p>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <div class="icon">
+            <i class="fa-solid fa-basketball"></i>
+          </div>
+          <h3>School Revenue</h3>
+          <p>
+            Not only are we giving schools a new level of school spirit and home
+            field advantage, but we are also giving them a source of revenue.
+            The program pays itself off and then continues to feed in schools
+            revenue giving Athletic Directors more of a budget for their teams.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--------------Price Plans------------------>
+    <section id="price">
+      <div class="container">
+        <h1>Price Plans</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"A Website" Deal!</h2>
+                <p>$399/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Squire</li>
+                  <li><i class="fa fa-times-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-times-circle"></i>Goat Member</li>
+                  <li><i class="fa fa-times-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-times-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"Not a Website" Deal!</h2>
+                <p>$420/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-check-circle"></i>Goat Member</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Goat</li>
+                  <li><i class="fa fa-times-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-times-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"Hardware" Deal!</h2>
+                <p>A Human Hand/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-check-circle"></i>Guild Membership</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Robe Wizard</li>
+                  <li><i class="fa fa-check-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-times-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=fRscYVvEFt8"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>"A Trash Website" Deal!</h2>
+                <p>3 Bars of Gold/<span>month</span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i> Tons Of Games</li>
+                  <li><i class="fa fa-check-circle"></i>Dope Stuff</li>
+                  <li><i class="fa fa-check-circle"></i>Guild Member</li>
+                  <li><i class="fa fa-check-circle"></i>Be our Friend</li>
+                  <li><i class="fa fa-check-circle"></i>Rank: Dragon</li>
+                  <li><i class="fa fa-check-circle"></i>A website</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a
+                  class="buy-btn"
+                  href="https://www.youtube.com/watch?v=fRscYVvEFt8"
+                  target="_blank"
+                  >Buy it or you're a loser</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------Get In Touch---------------->
+    <!----------------About--------------->
+    <section id="About">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-content">
+              <h2>About Us</h2>
+              There are over 15 million students attending over 20,000 high
+              schools scattered across America. We seek to provide an experience
+              that no one has ever seen before. We are changing the
+              entertainment dynamic of high school gymnasiums forever. Slow
+              Motion, Live Action, Instant Replay.
+            </div>
+            <a href="about.html">
+              <button type="button" class="btn btn-primary">Read More>></button>
+            </a>
+          </div>
+
+          <!-- <div class="col-md-6 skills-bar">
+        <p>C++</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 75%">75%</div>
+        </div>
+
+        <p>Java</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%">80%</div>
+        </div>
+
+        <p>Html/CSS/JavaScript</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%">60%</div>
+        </div>
+
+        <p>Electrical Engineering</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 85%">85%</div>
+        </div>
+      </div> -->
+        </div>
+      </div>
+    </section>
+    <!-----------Footer-------------->
+    <footer>
+      <div id="legal">&copy; Copyright 2022. All Rights Reserved.</div>
     </footer>
+    <!---------------Scroll------------------->
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
-  
-
-  <script src="scripts/hamburger.js"></script>
-
-  <script src="scripts/slideshow.js"></script>
 </html>
