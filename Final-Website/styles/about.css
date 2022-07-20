@@ -31,7 +31,7 @@ main{
   margin: 0 auto;
   width: 75%;
   border: 2px solid #ccc;
-  background-image: url(../images/largelogo.jpeg);
+  background-image: url(../images/largelogo.jpg);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
